@@ -1,0 +1,45 @@
+# Installation
+
+The officially supported installation method is Docker Compose:
+
+**docker-compose.yml**
+
+```yaml [docker-compose.yml]
+services:
+  hound-postgres:
+    container_name: hound-postgres
+    image: postgres:18
+    environment:
+      POSTGRES_USER: hound
+      POSTGRES_PASSWORD: hound_password
+      POSTGRES_DB: hound_db
+    volumes:
+      - postgres_data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hound -d hound_db"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  hound-server:
+    container_name: hound-server
+    image: houndmediaserver/hound:latest
+    depends_on:
+      hound-postgres:
+        condition: service_healthy
+    ports:
+      - "2323:2323"
+    environment:
+      - APP_ENV=production
+      - POSTGRES_HOST=hound-postgres
+      - POSTGRES_PORT=5432
+      - POSTGRES_USER=hound # make sure user and password are the same as postgres service
+      - POSTGRES_PASSWORD=hound_password
+      - POSTGRES_DB=hound_db
+      - SERVER_PORT=2323 # try not to change
+    volumes:
+      - ./docker/Hound Data:/app/Hound Data
+
+volumes:
+  postgres_data:
+```
