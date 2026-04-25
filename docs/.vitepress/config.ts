@@ -1,45 +1,49 @@
-import { defineConfig } from 'vitepress';
-import { useSidebar } from 'vitepress-openapi'
-import spec from '../public/openapi.json' with { type: 'json' }
+import { defineConfig } from "vitepress";
+import { useSidebar } from "vitepress-openapi";
+import spec from "../public/openapi.json" with { type: "json" };
 
 const sidebar = useSidebar({
   spec,
   // Optionally, you can specify a link prefix for all generated sidebar items.
-  linkPrefix: '/operations/',
-})
+  linkPrefix: "/operations/",
+});
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
-  lang: 'en-US',
-  title: 'Hound Media Server',
-  description: 'Hound Media Server',
+  lang: "en-US",
+  title: "Hound Media Server",
+  description: "Hound Media Server",
 
   themeConfig: {
-    nav: [{ text: 'Getting Started', link: '/introduction' }],
+    nav: [{ text: "Getting Started", link: "/introduction" }],
     sidebar: [
       {
-        text: 'Getting Started',
+        text: "Getting Started",
         items: [
           {
-            text: 'Introduction',
-            link: '/introduction',
+            text: "Introduction",
+            link: "/introduction",
           },
           {
-            text: 'Installation',
-            link: '/installation',
+            text: "Installation",
+            link: "/installation",
           },
           {
-            text: 'Pricing Model',
-            link: '/pricing-model',
+            text: "Setting Up Your First Provider",
+            link: "/provider",
+          },
+          {
+            text: "Pricing and Philosophy",
+            link: "/pricing-model",
           },
         ],
       },
       {
-        text: 'API Documentation',
+        text: "API Documentation",
         items: [
           {
-            text: 'Introduction',
-            link: '/operations/introduction',
+            text: "Introduction",
+            link: "/operations/introduction",
           },
           ...sidebar.generateSidebarGroups(),
         ],

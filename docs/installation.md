@@ -1,18 +1,20 @@
 # Installation
 
-The officially supported installation method is Docker Compose:
+The officially supported installation method is Docker Compose.
 
-**docker-compose.yml**
+Create a `docker-compose.yml` file:
 
-```yaml [docker-compose.yml]
+::: code-group
+
+```yaml [docker-compose.yml] {8,28,29}
 services:
   hound-postgres:
     container_name: hound-postgres
     image: postgres:18
     environment:
-      POSTGRES_USER: hound
-      POSTGRES_PASSWORD: hound_password
       POSTGRES_DB: hound_db
+      POSTGRES_USER: hound
+      POSTGRES_PASSWORD: super-strong-password
     volumes:
       - postgres_data:/var/lib/postgresql
     healthcheck:
@@ -30,16 +32,47 @@ services:
     ports:
       - "2323:2323"
     environment:
-      - APP_ENV=production
-      - POSTGRES_HOST=hound-postgres
-      - POSTGRES_PORT=5432
-      - POSTGRES_USER=hound # make sure user and password are the same as postgres service
-      - POSTGRES_PASSWORD=hound_password
       - POSTGRES_DB=hound_db
-      - SERVER_PORT=2323 # try not to change
+      - POSTGRES_USER=hound
+      - POSTGRES_PASSWORD=super-strong-password
+      - HOUND_SECRET=super-strong-secret
     volumes:
       - ./docker/Hound Data:/app/Hound Data
+      # (Optional) attach your media library
+      # IMPORTANT: Please read the [External Library] page before
+      # doing this
+      # - /path/to/movies:/app/External Library/Movies
+      # - /path/to/shows:/app/External Library/TV Shows
 
 volumes:
   postgres_data:
 ```
+
+:::
+Pay attention to the highlighted lines:
+
+- Change `POSTGRES_PASSWORD` in both `hound-postgres` and `hound-server` to a strong password. Make sure both are the same.
+- Change `HOUND_SECRET` in `hound-server` to a strong secret.
+
+You can use [this site](https://randomkeygen.com/secret-key) to generate a strong password/secret, or generate your own.
+
+Start the containers:
+
+```bash
+docker compose up -d
+```
+
+And access the web portal:
+
+::: code-group
+
+```yml [http://localhost:2323]
+Username: admin
+Password: password
+```
+
+:::
+
+Congratulations, you have successfully deployed Hound!
+
+Next, you'll need to follow the next section to **set up a provider**, so you can start streaming and downloading content.
