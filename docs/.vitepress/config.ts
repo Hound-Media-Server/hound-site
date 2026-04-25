@@ -33,6 +33,10 @@ export default defineConfig({
             link: "/provider",
           },
           {
+            text: "Managing your Library",
+            link: "/library",
+          },
+          {
             text: "Pricing and Philosophy",
             link: "/pricing-model",
           },

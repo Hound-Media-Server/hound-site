@@ -39,8 +39,7 @@ services:
     volumes:
       - ./docker/Hound Data:/app/Hound Data
       # (Optional) attach your media library
-      # IMPORTANT: Please read the [External Library] page before
-      # doing this
+      # IMPORTANT: Please read the docs before doing this
       # - /path/to/movies:/app/External Library/Movies
       # - /path/to/shows:/app/External Library/TV Shows
 
@@ -72,6 +71,8 @@ Password: password
 ```
 
 :::
+
+**Make sure you change your password after logging in.**
 
 Congratulations, you have successfully deployed Hound!
 
