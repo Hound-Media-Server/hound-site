@@ -25,6 +25,19 @@ export default defineConfig({
             link: "/introduction",
           },
           {
+            text: "Platforms",
+            link: "/platforms",
+          },
+          {
+            text: "Pricing and Philosophy",
+            link: "/pricing-model",
+          }
+        ],
+      },
+      {
+        text: "Quick Setup Guide",
+        items: [
+          {
             text: "Installation",
             link: "/installation",
           },
@@ -35,10 +48,6 @@ export default defineConfig({
           {
             text: "Managing your Library",
             link: "/library",
-          },
-          {
-            text: "Pricing and Philosophy",
-            link: "/pricing-model",
           },
         ],
       },
@@ -53,6 +62,9 @@ export default defineConfig({
         ],
       },
     ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/Hound-Media-Server/hound' }
+    ]
   },
   /** Give each dynamic page its own <title> */
   transformPageData(pageData) {

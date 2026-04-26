@@ -10,10 +10,10 @@ The core philosophy behind this is to allow users to fully try all features, wit
 Purchase will be available upon release. The user restriction doesn't exist in Beta. However, you will lose access to extra users you've created if you do not purchase a license when v1.0.0 releases.
 :::
 
-## Self-hosting and privacy is important to me
+## Self-hosting and privacy is core to Hound's philosophy
 
-Self-hosting is the core philosophy behind Hound, and although it has a paid option, it is fully open-source and forkable by anyone. No code is separated to a different repo, everything is open. Your data stays in your server always, and nothing is sent to Hound's servers (Hound servers don't exist anyway)
+Self-hosting is the core philosophy behind Hound, and although it has a paid option, it is fully open-source and forkable by anyone. Your data stays in your server always, and nothing is sent to Hound's servers (becase Hound servers don't exist).
 
-**If you choose to purchase a license and support Hound, activation is completely offline.**
+**If you choose to purchase a license, activation is completely offline.**
 
 This means I can't stop you from forking Hound and remove the activation checks. Instead of doing this, if you are not able to support Hound financially, I invite you to contribute to the project if you can, and keys will be given to dedicated contributors.

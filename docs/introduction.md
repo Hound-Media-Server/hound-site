@@ -64,7 +64,7 @@ Hound is a fully-featured media server, like Jellyfin or Plex, but with the addi
     <tr>
       <td>Pricing</td>
       <td>
-        All features free for one user<br>
+        All features free for one user,<br>
         One lifetime license to unlock extra users<br>
       </td>
       <td>Freemium<br>Subscription for extra features</td>

@@ -34,7 +34,7 @@ Below are the minimal setup steps, but you might want to tinker with settings yo
 
 1. Choose a community instance [here](https://docs.aiostreams.viren070.me/getting-started/public-instances/), or self-host AIOStreams.
 2. Open your AIOStreams web portal. If a setup popup appears, select any option (Simple or Advanced).
-3. **(DEBRID ONLY)** On the left sidebar, select **Services**. Turn on the debrid services you have, and add your API key.
+3. **(DEBRID ONLY)** On the left sidebar, select **Services**. Turn on the debrid services you have, and add your API key. On the left sidebar, select **Filters** -> **Cache** -> Turn **Exclude Uncached** On
 4. Navigate to **Addons** on the sidebar, and select **Marketplace** at the top. Find **Torrentio** or **Comet** and press **Configure** -> **Install**.
 5. On the sidebar, navigate to **Save & Install**.
 6. Enter a password, make sure you remember this. Press **Create**. A UUID string will be shown, this is your username. Save this, as you'll need it to modify your configuration later.
@@ -47,6 +47,11 @@ Below are the minimal setup steps, but you might want to tinker with settings yo
 The user is responsible for the content they access. You should only stream and download content that you have access to legally.
 :::
 
-## References
+## Congratulations!
 
-For further references, check out the [official AIOStreams documentation](https://docs.aiostreams.viren070.me/getting-started/) or the [/r/StremioAddons](https://www.reddit.com/r/StremioAddons/) subreddit.
+**If you've made it this far, you're basically done!** You can now stream and download content through Hound. Read the next section to learn how to add content to your library, or connect an existing library.
+
+## Resources
+
+- [Official AIOStreams documentation](https://docs.aiostreams.viren070.me/getting-started/)
+- [/r/StremioAddons](https://www.reddit.com/r/StremioAddons/)

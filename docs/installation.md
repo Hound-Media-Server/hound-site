@@ -2,7 +2,7 @@
 
 The officially supported installation method is Docker Compose.
 
-Create a `docker-compose.yml` file:
+In an new folder, create a `docker-compose.yml` file:
 
 ::: code-group
 
@@ -37,7 +37,7 @@ services:
       - POSTGRES_PASSWORD=super-strong-password
       - HOUND_SECRET=super-strong-secret
     volumes:
-      - ./docker/Hound Data:/app/Hound Data
+      - ./Hound Data:/app/Hound Data
       # (Optional) attach your media library
       # IMPORTANT: Please read the docs before doing this
       # - /path/to/movies:/app/External Library/Movies
@@ -76,4 +76,4 @@ Password: password
 
 Congratulations, you have successfully deployed Hound!
 
-Next, you'll need to follow the next section to **set up a provider**, so you can start streaming and downloading content.
+Next, follow the next section to **set up a provider**, so you can start streaming and downloading content.
