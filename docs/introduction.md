@@ -1,3 +1,7 @@
+<img src="./hound-logo.png" width="300" />
+
+---
+
 # What is Hound?
 
 Hound is a fully-featured media server, like Jellyfin or Plex, but with the additional ability to stream content through P2P (torrent) or HTTP/Debrid sources.
@@ -10,11 +14,12 @@ With Hound, you get the benefits of fully controlling your media like Jellyfin, 
 These features come **out of the box**, without having to deploy additional services:
 
 - Stream and download your own content from your drives, or stream content directly from P2P (torrent) and HTTP/Debrid sources through Stremio addons
-- Create custom collections/lists
 - Trakt-like features, all your watches are automatically tracked and easily browsable
+- Create custom collections/lists
 - Add reviews and comments to your media
 - Android and Android TV clients (iOS and tvOS coming soon)
-- Really fast to setup (<10 mins), few dependencies
+- Focus on UI/UX, and Admin experience
+- Really fast to setup, zero to watching content in <10 mins, few dependencies
 
 ## Hound vs. Alternatives
 
@@ -122,10 +127,10 @@ Here are the observations that led me to build Hound:
 
 **Instant Streaming is important for a lot of people**
 
+- **'Storage is cheap,' is increasingly not true.** The upfront cost of a few drives can be non-trivial for many, before extra electricity costs. Add redundancy, and we're looking at thousands.
+- Sometimes, someone requests a full show, watches the first episode, and loses interest in 10 minutes. I find this wasteful.
 - While hosting your own media is the correct self-hosted approach, from a user perspective, many prefer streaming.
 - Although in the Plex/Jellyfin ecosystem, requesting media is now user-friendly and efficient, it still can't beat finding something, pressing play, and watching immediately, in seconds.
-- Sometimes, someone requests a full show, watches the first episode, and loses interest in 10 minutes. I find this wasteful.
-- **'Storage is cheap,' is increasingly not true.** The upfront cost of a few drives can be non-trivial for many, before extra electricity costs. Add redundancy, and we're looking at thousands.
 
 **But I like having control over my media**
 

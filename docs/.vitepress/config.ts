@@ -10,9 +10,11 @@ const sidebar = useSidebar({
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
+  base: '/hound-site/',
   lang: "en-US",
-  title: "Hound Media Server",
+  title: "Hound Documentation",
   description: "Hound Media Server",
+  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
 
   themeConfig: {
     nav: [{ text: "Getting Started", link: "/introduction" }],
@@ -31,6 +33,10 @@ export default defineConfig({
           {
             text: "Pricing and Philosophy",
             link: "/pricing-model",
+          },
+          {
+            text: "Contributing and AI Policy",
+            link: "/contributing",
           }
         ],
       },
