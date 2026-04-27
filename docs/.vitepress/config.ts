@@ -55,8 +55,8 @@ export default defineConfig({
         text: "API Documentation",
         items: [
           {
-            text: "Introduction",
-            link: "/operations/introduction",
+            text: "Authentication",
+            link: "/operations/authentication",
           },
           ...sidebar.generateSidebarGroups(),
         ],

@@ -1,16 +1,19 @@
 # What is Hound?
 
 Hound is a fully-featured media server, like Jellyfin or Plex, but with the additional ability to stream content through P2P (torrent) or HTTP/Debrid sources.
+With Hound, you get the benefits of fully controlling your media like Jellyfin, but can also stream instantly like Stremio. It's the best of both worlds.
 
-**Hound is fully open source (AGPLv3) and self-hosted**
+**Hound is fully open source (AGPLv3) and self-hosted.**
 
 ## Features
 
-- Download and stream your own content from your drives, or stream content directly from P2P (torrent) and HTTP/Debrid sources through Stremio addons
+These features come **out of the box**, without having to deploy additional services:
+
+- Stream and download your own content from your drives, or stream content directly from P2P (torrent) and HTTP/Debrid sources through Stremio addons
 - Create custom collections/lists
 - Trakt-like features, all your watches are automatically tracked and easily browsable
 - Add reviews and comments to your media
-- Android and Android TV clients
+- Android and Android TV clients (iOS and tvOS coming soon)
 - Really fast to setup (<10 mins), few dependencies
 
 ## Hound vs. Alternatives
@@ -41,7 +44,14 @@ Hound is a fully-featured media server, like Jellyfin or Plex, but with the addi
       <td>Yes<br>(Debrid recommended)</td>
     </tr>
     <tr>
-      <td>Detailed watch history and statistics</td>
+      <td>Downloading Content</td>
+      <td>Yes, through Hound itself and Stremio addons</td>
+      <td>Not handled by Plex (3rd party)</td>
+      <td>Not handled by Jellyfin (3rd party)</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Detailed watch activity and statistics</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -55,11 +65,11 @@ Hound is a fully-featured media server, like Jellyfin or Plex, but with the addi
       <td>Fast, most things out-of-the-box</td>
     </tr>
     <tr>
-      <td>Hardware Transcoding</td>
+      <td>Transcoding</td>
       <td>WIP</td>
-      <td>Yes<br>(paid license)</td>
+      <td>Yes<br>(paid license for hardware transcoding)</td>
       <td>Yes</td>
-      <td>No</td>
+      <td>On Web Client (?)</td>
     </tr>
     <tr>
       <td>Pricing</td>
@@ -112,14 +122,14 @@ Here are the observations that led me to build Hound:
 
 **Instant Streaming is important for a lot of people**
 
-- While hosting your own media is the most self-hosted choice, from a user perspective, many prefer streaming.
-- Although in the Plex/Jellyfin ecosystem, requesting media is now user-friendly and efficient, it still can't beat finding something, pressing play, and watching immediately.
+- While hosting your own media is the correct self-hosted approach, from a user perspective, many prefer streaming.
+- Although in the Plex/Jellyfin ecosystem, requesting media is now user-friendly and efficient, it still can't beat finding something, pressing play, and watching immediately, in seconds.
 - Sometimes, someone requests a full show, watches the first episode, and loses interest in 10 minutes. I find this wasteful.
-- 'Storage is cheap,' is increasingly not true. The upfront cost of a few drives can be non-trivial for many, before extra electricity costs. Add redundancy, and we're looking at thousands.
+- **'Storage is cheap,' is increasingly not true.** The upfront cost of a few drives can be non-trivial for many, before extra electricity costs. Add redundancy, and we're looking at thousands.
 
-**But I still like storing my own media**
+**But I like having control over my media**
 
-- Movies and shows that I really like, and are particular about, I tend to store
+- Movies and shows that I really like, and are particular about, I want to store
 - I like the feeling of knowing that what's stored on my server, they can never be taken away from me
 
 **I wanted a solution where I could decide, when to download and when to stream.**

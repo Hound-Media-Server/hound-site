@@ -14,7 +14,7 @@ There are two ways to use AIOStreams, either with a [community instance](https:/
 
 You can read more about debrid services [here](https://github.com/fynks/debrid-services-comparison/blob/main/README.md).
 
-**Hound also supports P2P streaming**, but it is much slower and less reliable. Startup takes longer, and high bitrate content or content with low-seeders will often buffer. P2P streaming is not recommended **except** for popular content with many seeders.
+**Hound also supports P2P streaming**, but high bitrate content or content with low-seeders will often buffer. P2P streaming is not recommended **except** for popular content with many seeders.
 
 If you're downloading content then streaming from your Hound Library later, a debrid service isn't vital.
 
@@ -24,11 +24,7 @@ As you no longer seed when accessing content through HTTPS, it is recommended to
 
 ## Adding a Provider Profile
 
-Once you have set up AIOStreams (or have decided to use a community instance), we will add a **provider profile** in Hound. A profile corresponds to a single AIOStreams configuration. You can set up multiple configurations in your AIOStreams instance and add them as separate profiles in Hound.
-
-For example, you might want to have a streaming profile (lower bitrate, debrid) and a downloading profile (Higher resolution, bitrate, quality, etc.).
-
-Below are the minimal setup steps, but you might want to tinker with settings yourself to get the best results. In general, the best configuration is one that returns the stream you want as the top result. The official AIOStreams documentation is [here](https://docs.aiostreams.viren070.me/getting-started/).
+Now, we will add a **provider profile** in Hound:
 
 ### Setup Steps:
 
@@ -42,6 +38,12 @@ Below are the minimal setup steps, but you might want to tinker with settings yo
 8. Open your Hound web Portal, and login to the Admin account. On the top right, click **admin** -> **Admin Panel** -> **Provider Profiles** -> **Add Provider**
 9. Add a **Name** to identify your profile, and paste the AIOStreams **Manifest URL**. If Hound was able to access the host, the profile will have been added successfully.
 10. Navigate to a movie or show. On the **Play** button, select the dropdown icon and press **Select Stream**. If you see a list of streams, your provider has been set up successfully! Here, you can choose to download the content or stream it directly.
+
+---
+
+You can repeat these steps to add more profiles. For example, you might want to have a streaming profile (lower bitrate, debrid) and a downloading profile (Higher resolution, bitrate, quality, etc.).
+
+You might want to tinker with settings yourself to get the best results. In general, the best configuration is one that returns the stream you want as the top result. The official AIOStreams documentation is [here](https://docs.aiostreams.viren070.me/getting-started/).
 
 ::: warning Warning
 The user is responsible for the content they access. You should only stream and download content that you have access to legally.

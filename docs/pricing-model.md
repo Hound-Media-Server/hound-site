@@ -4,10 +4,10 @@ Early on, I decided that Hound would be a paid app so I could continue its devel
 
 **Hound is completely free for one user, one-time paid license to unlock unlimited users.**
 
-The core philosophy behind this is to allow users to fully try all features, without restriction, so they can make an informed choice on whether or not to purchase Hound.
+The core philosophy behind this is to allow users to fully try all features, without restriction, so they can make an informed choice on whether or not to purchase Hound. There are no restrictions to the number of devices.
 
 ::: warning Warning
-Purchase will be available upon release. The user restriction doesn't exist in Beta. However, you will lose access to extra users you've created if you do not purchase a license when v1.0.0 releases.
+As Hound is still in Beta, you can't actually purchase a license yet, so these restrictions don't apply yet. They will apply upon v1.0.0 release.
 :::
 
 ## Self-hosting and privacy is core to Hound's philosophy
