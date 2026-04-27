@@ -1,4 +1,4 @@
-<img src="./hound-logo.png" width="300" />
+<img src="/hound-logo.png" width="300" />
 
 ---
 

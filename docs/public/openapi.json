@@ -5340,7 +5340,7 @@
     },
     "servers": [
         {
-            "url": "//localhost:2323"
+            "url": "http://localhost:2323"
         }
     ],
     "components": {

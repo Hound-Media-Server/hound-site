@@ -14,7 +14,7 @@ export default defineConfig({
   lang: "en-US",
   title: "Hound Documentation",
   description: "Hound Media Server",
-  head: [['link', { rel: 'icon', href: '/favicon.png' }]],
+  head: [['link', { rel: 'icon', href: '/hound-site/favicon.png' }]],
 
   themeConfig: {
     nav: [{ text: "Getting Started", link: "/introduction" }],
