@@ -7,7 +7,20 @@
 Hound is a fully-featured media server, like Jellyfin or Plex, but with the additional ability to stream content through P2P (torrent) or HTTP/Debrid sources.
 With Hound, you get the benefits of fully controlling your media like Jellyfin, but can also stream instantly like Stremio. It's the best of both worlds.
 
+- [Github Repo](https://github.com/Hound-Media-Server/hound)
+
 **Hound is fully open source (AGPLv3) and self-hosted.**
+
+## Demo
+
+Access the demo [here](https://hound-demo.yuwono.xyz)
+
+```
+username: selfhosted
+password: password
+```
+
+The web app is not optimized for mobile yet, try using a desktop.
 
 ## Features
 

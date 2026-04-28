@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: "Hound Media Server"
-  tagline: "The Modern Media Server"
+  tagline: "The Modern Hybrid Media Server"
   actions:
     - theme: brand
       text: Getting Started

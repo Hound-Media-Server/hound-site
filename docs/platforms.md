@@ -8,7 +8,11 @@ Android, Android TV, and the future iOS, and tvOS clients are built on **React N
 
 ### Android and Android TV
 
-Android and Android TV has fully working clients, which you need to sideload using our APKs. You can grab the latest APKs from the repo.
+Android and Android TV has fully working clients, which you need to sideload using the APKs. You can grab the latest APKs from the repo.
+
+Download the APKs here: [Releases](https://github.com/Hound-Media-Server/hound-app/releases)
+
+AFTV Downloader Code: **5479712** (v0.0.1-beta, for Android TV)
 
 ### iOS and tvOS
 

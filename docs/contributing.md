@@ -10,6 +10,8 @@ Here's my current development approach:
 
 Actual coding is rarely the development bottleneck in Hound, when you plan well, the actual code changes should be short and surgical. I know the codebase better, and I've found that using AI to code doesn't speed up the process. With AI, the time spent debugging offsets any time saved.
 
+I don't use AI to write for me either, everything in the documentation, repos, are my own writing. Pinky promise.
+
 ## Contributing
 
 Right now, I'm the only one working on Hound, so **contributors are very welcome!**
