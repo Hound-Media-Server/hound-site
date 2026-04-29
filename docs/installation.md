@@ -16,7 +16,7 @@ services:
       POSTGRES_USER: hound
       POSTGRES_PASSWORD: super-strong-password
     volumes:
-      - postgres_data:/var/lib/postgresql
+      - ./Hound Data/postgres_data:/var/lib/postgresql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U hound -d hound_db"]
       interval: 5s
@@ -42,9 +42,6 @@ services:
       # IMPORTANT: Please read the docs before doing this
       # - /path/to/movies:/app/External Library/Movies
       # - /path/to/shows:/app/External Library/TV Shows
-
-volumes:
-  postgres_data:
 ```
 
 :::
