@@ -17,6 +17,7 @@ services:
       POSTGRES_PASSWORD: super-strong-password
     volumes:
       - ./Hound Data/postgres_data:/var/lib/postgresql
+    restart: unless-stopped
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U hound -d hound_db"]
       interval: 5s
@@ -38,6 +39,7 @@ services:
       - HOUND_SECRET=super-strong-secret
       # (Optional) Add if you want MDBList catalogs
       # - MDBLIST_API_KEY=
+    restart: unless-stopped
     volumes:
       - ./Hound Data:/app/Hound Data
       # (Optional) attach your media library
