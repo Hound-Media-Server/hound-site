@@ -6,7 +6,7 @@ In an new folder, create a `docker-compose.yml` file:
 
 ::: code-group
 
-```yaml [docker-compose.yml] {8,28,29}
+```yaml [docker-compose.yml] {8,29,30}
 services:
   hound-postgres:
     container_name: hound-postgres

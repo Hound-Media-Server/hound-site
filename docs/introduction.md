@@ -62,6 +62,13 @@ These features come **out of the box**, without having to deploy additional serv
       <td>Yes<br>(Debrid recommended)</td>
     </tr>
     <tr>
+      <td>IPTV Support</td>
+      <td>First-class support</td>
+      <td>Supported, complex setup</td>
+      <td>Supported, but not a priority</td>
+      <td>No</td>
+    </tr>
+    <tr>
       <td>Downloading Content</td>
       <td>Yes, through Hound itself and Stremio addons</td>
       <td>Not handled by Plex (3rd party)</td>
@@ -101,7 +108,7 @@ These features come **out of the box**, without having to deploy additional serv
     </tr>
     <tr>
       <td>Client Support</td>
-      <td>Limited<br>Android & Android TV<br>iOS & tvOS in progress</td>
+      <td>Limited<br>Android, Android TV, Windows, MacOS (arm)<br>iOS & tvOS in progress</td>
       <td>Extensive</td>
       <td>Limited official clients<br>Strong third-party support</td>
       <td>Decent</td>
