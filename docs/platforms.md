@@ -8,16 +8,19 @@ Android, Android TV, and the future iOS, and tvOS clients are built on **React N
 
 ### Android and Android TV
 
-Android and Android TV has fully working clients, which you need to sideload using the APKs. You can grab the latest APKs from the repo.
+To install on Android, please join the closed testing:
+First, join this group: https://groups.google.com/g/hound-play-store-testing
 
-Download the APKs here: [Releases](https://github.com/Hound-Media-Server/hound-app/releases)
+Then get the app on either of these links:
 
-AFTV Downloader Code: **5479712** (v0.0.1-beta, for Android TV)
+- Web: https://play.google.com/apps/testing/com.houndmediaserver.hound
+- Your android device: https://play.google.com/store/apps/details?id=com.houndmediaserver.hound
+
+Make sure you join the group with the same account that is logged in your Play Store.
 
 ### iOS and tvOS
 
-**These are not available yet.**
-While a working iOS build exists, it will take time to get it into Test Flight as Beta, and eventually the app store on release. They share the codebase with Android, so are being developed simultaneously. tvOS will require more work, since d-pad remote behavior isn't identical across tvOS and AndroidTV.
+You'll need the TestFlight app. Accept the invitation, and download through TestFlight: [here](https://testflight.apple.com/join/W2HWsaxZ)
 
 ### Windows and MacOS
 
@@ -35,7 +38,7 @@ An alternative to this would be to build the executables yourself on your machin
 
 ### Web / Browsers
 
-Although you can stream from the web browser, this is not recommended since many codecs and containers are not supported. You'll likely run into issues with audio and track selection. Prefer the Desktop apps instead.
+This is pre-packaged with the server install.
 
 ## Other Clients
 

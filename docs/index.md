@@ -18,15 +18,10 @@ hero:
 
 <script setup>
 import IntroductionPage from './introduction.md'
-import PricingPage from './pricing-model.md'
 import ContributingPage from './contributing.md'
 </script>
 
 <IntroductionPage />
-
----
-
-<PricingPage />
 
 ---
 

@@ -56,11 +56,11 @@ These features come **out of the box**, without having to deploy additional serv
       <td>No</td>
     </tr>
     <tr>
-      <td>Stream content instantly from P2P/Debrid sources</td>
-      <td>Yes<br>(Debrid recommended)</td>
+      <td>Stream content instantly from P2P/Debrid/HTTP/Usenet sources</td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
-      <td>Yes<br>(Debrid recommended)</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td>IPTV Support</td>
@@ -98,18 +98,8 @@ These features come **out of the box**, without having to deploy additional serv
       <td>On Web Client (?)</td>
     </tr>
     <tr>
-      <td>Pricing</td>
-      <td>
-        All features free for one user,<br>
-        One lifetime license to unlock extra users<br>
-      </td>
-      <td>Freemium<br>Subscription for extra features</td>
-      <td>Completely Free</td>
-      <td>Completely Free</td>
-    </tr>
-    <tr>
       <td>Client Support</td>
-      <td>Limited<br>Android, Android TV, Windows, MacOS (arm)<br>iOS & tvOS in progress</td>
+      <td>Android, Android TV, iOS & tvOS, Windows, MacOS</td>
       <td>Extensive</td>
       <td>Limited official clients<br>Strong third-party support</td>
       <td>Decent</td>

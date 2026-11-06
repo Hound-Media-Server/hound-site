@@ -10,11 +10,11 @@ const sidebar = useSidebar({
 
 // refer https://vitepress.dev/reference/site-config for details
 export default defineConfig({
-  base: '/hound-site/',
+  base: "/hound-site/",
   lang: "en-US",
   title: "Hound Documentation",
   description: "Hound Media Server",
-  head: [['link', { rel: 'icon', href: '/hound-site/favicon.png' }]],
+  head: [["link", { rel: "icon", href: "/hound-site/favicon.png" }]],
 
   themeConfig: {
     nav: [{ text: "Getting Started", link: "/introduction" }],
@@ -31,13 +31,9 @@ export default defineConfig({
             link: "/platforms",
           },
           {
-            text: "Pricing and Philosophy",
-            link: "/pricing-model",
-          },
-          {
             text: "Contributing and AI Policy",
             link: "/contributing",
-          }
+          },
         ],
       },
       {
@@ -69,8 +65,8 @@ export default defineConfig({
       },
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Hound-Media-Server/hound' }
-    ]
+      { icon: "github", link: "https://github.com/Hound-Media-Server/hound" },
+    ],
   },
   /** Give each dynamic page its own <title> */
   transformPageData(pageData) {
